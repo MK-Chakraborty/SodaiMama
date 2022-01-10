@@ -1,0 +1,172 @@
+/* --------------------------------------- *\
+                    Fonts
+/* ---------------------------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,500&display=swap");
+
+/* --------------------------------------- *\
+                  Utilities
+/* ---------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* --------------------------------------- *\
+                  Header
+/* ---------------------------------------- */
+
+.navbar {
+  border-bottom: 2px solid #008000;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+}
+
+.headerLogo a img {
+  width: 127px;
+  padding: 7px 20px 15px;
+  object-fit: cover;
+}
+
+.menuItems li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.menuContainer {
+  display: flex;
+}
+
+.menuItems li a {
+  color: #006a4e;
+  font-weight: 600;
+}
+
+.searchIcon {
+  font-size: 30px;
+}
+
+.cartIcon {
+  width: 40px;
+}
+
+.cart {
+  background-color: #006a4e;
+  width: 125px;
+  position: relative;
+  text-align: center;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0 8px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.arrowIcon {
+  width: 30px;
+  position: absolute;
+  top: 24.5px;
+  right: 131px;
+  z-index: 1;
+}
+
+.artboard {
+  border-bottom: 1px solid rgb(235, 250, 237);
+  padding: 5px 0px;
+}
+
+.artboard img {
+  width: 25px;
+}
+
+.price {
+  padding: 5px 0px;
+}
+
+/* --------------------------------------- *\
+                  Main
+/* ---------------------------------------- */
+
+main {
+  display: flex;
+}
+
+/* --------------------------------------- *\
+                  Sidebar
+/* ---------------------------------------- */
+.sidebar {
+  border-right: 1px solid #8080807a;
+  width: 260px;
+  padding: 5px 0px;
+}
+
+.sidebarItem {
+  display: flex;
+  align-items: center;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+
+.sidebarItem:hover {
+  transform: translateX(10px);
+  transition: all 0.45s cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+
+.sidebarImg {
+  width: 30px;
+}
+
+.sidebarDividerText,
+.sidebarText {
+  font-size: 15px;
+  font-weight: 700;
+  color: #006a4e;
+  padding-left: 15px;
+}
+
+.sidebarDivider {
+  background: rgb(244, 244, 244);
+  padding: 10px 30px;
+  margin-bottom: 5px;
+}
+
+.sidebarDividerText {
+  color: #808080;
+}
+
+.sidebarDividerText span {
+  color: #006a4e;
+}
+
+.sidebarDividerText .lastname {
+  color: #fb6801;
+}
+
+.mainContainer {
+  flex-grow: 1;
+}
+/* --------------------------------------- *\
+                  Banner
+/* ---------------------------------------- */
