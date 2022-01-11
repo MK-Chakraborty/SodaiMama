@@ -42,7 +42,7 @@ body {
   display: flex;
   justify-content: space-between;
   position: fixed;
-  z-index: 9999;
+  z-index: 99;
   box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
 }
 
@@ -120,12 +120,37 @@ main {
 /* --------------------------------------- *\
                   Sidebar
 /* ---------------------------------------- */
-.sidebar {
-  border-right: 1px solid #8080807a;
+
+.leftSidebar {
   width: 270px;
   padding: 5px 0px;
-  position: relative;
   top: 75px;
+  position: fixed;
+  height: calc(100vh - 60px);
+  background: #ffffff;
+  overflow: auto;
+  z-index: 98;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+}
+
+/* width */
+.leftSidebar::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.leftSidebar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.leftSidebar::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.leftSidebar::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .sidebarItem {
@@ -180,9 +205,10 @@ main {
 }
 
 .mainContainerMenu {
-  width: calc(100% - 270px);
+  width: calc(100% - 255px);
   height: 50px;
   top: 75px;
+  right: 0px;
   font-size: 16px;
   line-height: 30px;
   font-weight: 600;
@@ -191,7 +217,7 @@ main {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  z-index: 9998;
+  z-index: 97;
   box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
 }
 
@@ -224,5 +250,19 @@ main {
 }
 
 /* --------------------------------------- *\
-                  Banner
+                Main Container
+/* ---------------------------------------- */
+
+.containerContent {
+  max-width: 1240px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -30px;
+}
+
+/* --------------------------------------- *\
+                    Banner
 /* ---------------------------------------- */
