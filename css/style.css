@@ -2,7 +2,7 @@
                     Fonts
 /* ---------------------------------------- */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 /* --------------------------------------- *\
                   Utilities
@@ -223,6 +223,7 @@ main {
   align-items: center;
   position: fixed;
   z-index: 97;
+  background: #ffffff;
   box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
 }
 
@@ -277,6 +278,128 @@ main {
                     Banner
 /* ---------------------------------------- */
 
+.banner {
+  padding-bottom: 60px;
+}
+
 .banner img {
   width: 100%;
+}
+
+/* --------------------------------------- *\
+                    Preorder
+/* ---------------------------------------- */
+
+.preorder {
+  background: hsla(0, 0%, 50.2%, 0.09019607843137255);
+  padding: 15px 30px;
+  position: relative;
+}
+
+.leftBorder {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 70%;
+  width: 10px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-radius: 5px;
+  background: rgb(68, 189, 50);
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 40px;
+  color: #313131;
+}
+
+.preorderProductList {
+  position: relative;
+  min-height: 223px;
+  width: 280px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+  overflow: hidden;
+}
+
+.offerItemImg img {
+  width: 100%;
+  transition: all 0.45s cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+
+.offerItemImg img:hover {
+  transform: scale(1.2);
+}
+
+.offerItemContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  background: #ffffff;
+  position: absolute;
+  width: 90%;
+  bottom: 0;
+  left: 0;
+  height: 60px;
+}
+
+/* --------------------------------------- *\
+              Product Display
+/* ---------------------------------------- */
+
+.freshProducts {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(1fr, 1fr, 1fr);
+  grid-gap: 10px;
+}
+
+.card {
+  width: 280px;
+  border: 1px solid rgba(251, 231, 231, 0.38823529411764707);
+  border-bottom: none;
+}
+
+.cardImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cardImage img {
+  width: 50%;
+}
+
+.cardText {
+  text-align: center;
+  font-weight: 500;
+}
+
+.cardTitle {
+  font-size: 16px;
+  line-height: 25px;
+  color: #1a1a1a;
+}
+
+.cardsubtitle {
+  font-size: 12px;
+  color: #fb6801;
+}
+
+.cardPrice {
+  font-size: 13px;
+  color: #605e58;
+  margin: 5px 0 15px;
+}
+
+.cardPrice span {
+  font-size: 18px;
+  font-weight: 700;
 }
