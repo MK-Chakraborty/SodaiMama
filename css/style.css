@@ -355,15 +355,36 @@ main {
 
 .freshProducts {
   margin-top: 40px;
+  margin-bottom: 50px;
   display: grid;
-  grid-template-columns: repeat(1fr, 1fr, 1fr);
-  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-gap: 29px;
 }
 
 .card {
   width: 280px;
   border: 1px solid rgba(251, 231, 231, 0.38823529411764707);
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  height: 370px;
   border-bottom: none;
+  position: relative;
+}
+
+.productCatagory {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  display: inline-block;
+  background: rgba(23, 177, 23, 0.7019607843137254);
+  border-radius: 3px;
+}
+
+.productCatagory p {
+  font-size: 12px;
+  padding: 3px 6px;
+  color: #ffffff;
 }
 
 .cardImage {
@@ -371,15 +392,23 @@ main {
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
+  overflow: hidden;
+  height: 130px;
 }
 
 .cardImage img {
-  width: 50%;
+  width: 40%;
+}
+
+.cardImage img:hover {
+  transform: scale(1.4);
+  transition: 0.5s;
 }
 
 .cardText {
   text-align: center;
   font-weight: 500;
+  height: 190px;
 }
 
 .cardTitle {
@@ -396,10 +425,59 @@ main {
 .cardPrice {
   font-size: 13px;
   color: #605e58;
-  margin: 5px 0 15px;
+  margin: 9px 0 30px;
 }
 
 .cardPrice span {
   font-size: 18px;
   font-weight: 700;
+}
+
+.detailsButton {
+  display: inline-block;
+  border: 1px solid #006a4e;
+  color: #006a4e;
+  font-size: 11px;
+  padding: 1px 5px;
+  font-weight: 600;
+}
+
+.deliveryStatus,
+.productDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6px;
+}
+
+.deliveryStatus {
+  justify-content: flex-start;
+}
+
+.deliveryStatus img {
+  height: 22px;
+  margin-right: 5px;
+}
+
+.deliveryStatus p {
+  font-size: 11px;
+  line-height: 25px;
+  color: #9b9898;
+}
+
+.deliveryPayment img {
+  height: 22px;
+}
+
+.cardBtn {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #006a4e;
+  border-radius: 3px;
 }
