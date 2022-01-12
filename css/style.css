@@ -121,6 +121,11 @@ main {
                   Sidebar
 /* ---------------------------------------- */
 
+.sidebar {
+  width: 270px;
+  height: 100%;
+}
+
 .leftSidebar {
   width: 270px;
   padding: 5px 0px;
@@ -201,7 +206,7 @@ main {
 /* ---------------------------------------- */
 
 .mainContainer {
-  flex-grow: 1;
+  width: calc(100% - 255px);
 }
 
 .mainContainerMenu {
@@ -253,6 +258,11 @@ main {
                 Main Container
 /* ---------------------------------------- */
 
+.container {
+  display: flex;
+  justify-content: center;
+}
+
 .containerContent {
   max-width: 1240px;
   width: 100%;
@@ -260,9 +270,13 @@ main {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -30px;
+  margin-top: 126px;
 }
 
 /* --------------------------------------- *\
                     Banner
 /* ---------------------------------------- */
+
+.banner img {
+  width: 100%;
+}
